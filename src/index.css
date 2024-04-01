@@ -24,8 +24,6 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -33,6 +31,23 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+}
+.navbar {
+  width: 100%;
+  background-color: blue;
+  color: white;
+  display: flex;
+  top: 0;
+  left: 0;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.footer {
+  position: fixed;
+  display: block;
+  bottom: 0;
+  width: 100vw;
 }
 
 button {
