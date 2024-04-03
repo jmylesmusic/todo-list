@@ -1,5 +1,5 @@
 import { useState } from "react";
-import toDoListItems from "./assets/todolist-items.json";
+import toDoListItems from "../assets/todolist-items.json";
 
 function Body() {
   const [task, setTask] = useState(toDoListItems);
