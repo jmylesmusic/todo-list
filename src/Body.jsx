@@ -18,16 +18,19 @@ function Body() {
             <div className="navbar">
               <div id="navbar-item"></div>
               <div id="navbar-item">Task:</div>
+              <div>{task.item}</div>
               <div id="navbar-item">Priority:</div>
+              <div>{task.priority}</div>
               <div id="navbar-item">Due Date:</div>
+              <div>{task.due_date}</div>
               <div id="navbar-item">Completed?</div>
+              <button
+                onClick={() => deleteTask(task.id)}
+                className="btn-delete"
+              >
+                Delete
+              </button>
             </div>
-            <p>{task.item}</p>
-            <p>{task.priority}</p>
-            <p>{task.due_date}</p>
-            <button onClick={() => deleteTask(task.id)} className="btn-delete">
-              Delete
-            </button>
           </div>
         );
       })}
