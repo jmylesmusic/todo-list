@@ -36,10 +36,15 @@ h1 {
   background-color: blue;
   color: white;
   display: flex;
-  top: 0;
-  left: 0;
+  margin-top: 0;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  float: right;
+}
+.doing {
+  float: right;
+  align-content: center;
+  width: 600px;
 }
 
 .footer {
