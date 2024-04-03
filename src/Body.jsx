@@ -15,6 +15,13 @@ function Body() {
       {task.map((task) => {
         return (
           <div key={task.id} className="info-table">
+            <div className="navbar">
+              <div id="navbar-item"></div>
+              <div id="navbar-item">Task:</div>
+              <div id="navbar-item">Priority:</div>
+              <div id="navbar-item">Due Date:</div>
+              <div id="navbar-item">Completed?</div>
+            </div>
             <p>{task.item}</p>
             <p>{task.priority}</p>
             <p>{task.due_date}</p>
