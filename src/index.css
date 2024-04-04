@@ -33,7 +33,7 @@ h1 {
 }
 .navbar {
   width: 100%;
-  background-color: blue;
+  background-color: #293846;
   color: white;
   display: flex;
   margin-top: 0;
@@ -46,6 +46,13 @@ h1 {
   align-content: center;
   width: 600px;
 }
+.container {
+  margin-top: 0;
+  /* display: flex; */
+  flex-direction: row;
+  justify-content: space-evenly;
+  float: right;
+}
 
 .footer {
   position: fixed;
@@ -54,6 +61,16 @@ h1 {
   width: 100vw;
 }
 
+.list-heading-ctn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.list-item-ctn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -75,8 +92,7 @@ button:focus-visible {
 
 .info-table {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
 }
 
 @media (prefers-color-scheme: light) {
