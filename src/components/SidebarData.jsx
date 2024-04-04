@@ -1,5 +1,6 @@
 import React from "react";
-import { Assessment } from "@mui/icons-material";
+import AssessmentIcon from "@mui/icons-material/Assessment";
+
 import HomeIcon from "@mui/icons-material/Home";
 // import AnalyticsIcon from "@mui/icons-material/Analytics";
 import MailIcon from "@mui/icons-material/Mail";
@@ -15,7 +16,7 @@ export const SidebarData = [
   },
   {
     title: "Analytics",
-    icon: <Assessment />,
+    icon: <AssessmentIcon />,
     link: "/analytics",
   },
   {
