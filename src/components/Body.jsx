@@ -1,42 +1,18 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import toDoListItems from "../assets/todolist-items.json";
+import Footer from "./Footer.jsx";
+import Navbar from "./Navbar.jsx";
+import List from "./List";
+import "../index.css";
 
-function Body({ children }) {
-  const [task, setTask] = useState(toDoListItems);
-  const deleteTask = (itemId) => {
-    const copy = JSON.parse(JSON.stringify(task));
-    const filteredTasks = copy.filter((theitem) => {
-      return theitem.id !== itemId;
-    });
-    setTask(filteredTasks);
-  };
+const Body = () => {
   return (
-    <div className="container">
-      <div className="list-heading-ctn">
-        <div id="navbar-item"></div>
-        <div id="navbar-item">Task:</div>
-        <div id="navbar-item">Priority:</div>
-        <div id="navbar-item">Due Date:</div>
-        <div id="navbar-item">Completed?</div>
-      </div>
-      {task.map((task) => {
-        return (
-          <div key={task.id} className="info-table">
-            <div className="list-item-ctn">
-              <div>{task.item}</div>
-              <div>{task.priority}</div>
-              <div>{task.due_date}</div>
-              <button
-                onClick={() => deleteTask(task.id)}
-                className="btn-delete"
-              >
-                Delete
-              </button>
-            </div>
-          </div>
-        );
-      })}
+    <div>
+      <Navbar />
+      <List />
+      <Footer />
     </div>
   );
-}
+};
+
 export default Body;
