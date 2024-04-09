@@ -9,12 +9,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
-/* .navbar {
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: row;
-} */
 .sidebar {
   top: 0;
   left: 0;
@@ -90,4 +84,20 @@ body {
 
 .read-the-docs {
   color: #888;
+}
+.todosearch {
+  display: flex;
+  float: right;
+  position: absolute;
+  left: 200px;
+  top: 90px;
+}
+.todoadded {
+  position: absolute;
+  display: block;
+  left: 200px;
+  top: 120px;
+  color: #2f4050;
+  width: fit-content;
+  flex-direction: row-reverse;
 }
