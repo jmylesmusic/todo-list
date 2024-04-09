@@ -4,6 +4,7 @@ import Footer from "./components/Footer.jsx";
 import Navbar from "./components/Navbar.jsx";
 import Body from "./components/Body.jsx";
 import Sidebar from "./components/Sidebar.jsx";
+import ListItem from "./components/ListItem.jsx";
 
 function App() {
   const [list, setList] = useState([]);
@@ -50,6 +51,7 @@ function App() {
       <Navbar />
       <Sidebar />
       <Body />
+      <ListItem />
       <Footer />
     </div>
   );

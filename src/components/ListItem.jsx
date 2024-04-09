@@ -1,7 +1,7 @@
 import { useState } from "react";
 import toDoListItems from "../assets/todolist-items.json";
 
-function Body() {
+function ListItem() {
   /*   const [task, setTask] = useState(toDoListItems);
   const deleteTask = (itemId) => {
     const copy = JSON.parse(JSON.stringify(task));
@@ -39,4 +39,4 @@ function Body() {
     </div>
   ); */
 }
-export default Body;
+export default ListItem;
