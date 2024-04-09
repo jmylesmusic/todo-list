@@ -12,26 +12,13 @@ function ListItem() {
   };
   return (
     <div className="container">
-      <div className="list-heading-ctn">
-        <div id="navbar-item"></div>
-        <div id="navbar-item">Task:</div>
-        <div id="navbar-item">Priority:</div>
-        <div id="navbar-item">Due Date:</div>
-        <div id="navbar-item">Completed?</div>
-      </div>
-      {task.map((task) => {
+      {task.map((singleItem) => {
         return (
-          <div key={task.id} className="info-table">
+          <div key={singleItem.id} className="info-table">
             <div className="list-item-ctn">
-              <div>{task.item}</div>
-              <div>{task.priority}</div>
-              <div>{task.due_date}</div>
-              <button
-                onClick={() => deleteTask(task.id)}
-                className="btn-delete"
-              >
-                Delete
-              </button>
+              <div>{singleItem.item}</div>
+              <div>{singleItem.priority}</div>
+              <div>{singleItem.due_date}</div>
             </div>
           </div>
         );

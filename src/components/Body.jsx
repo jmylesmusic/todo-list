@@ -1,8 +1,8 @@
 import { useState } from "react";
 import toDoListItems from "../assets/todolist-items.json";
 
-function Body() {
-  /*   const [task, setTask] = useState(toDoListItems);
+function Body({ children }) {
+  const [task, setTask] = useState(toDoListItems);
   const deleteTask = (itemId) => {
     const copy = JSON.parse(JSON.stringify(task));
     const filteredTasks = copy.filter((theitem) => {
@@ -37,6 +37,6 @@ function Body() {
         );
       })}
     </div>
-  ); */
+  );
 }
 export default Body;
