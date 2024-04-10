@@ -142,3 +142,9 @@ button:focus-visible {
   width: 25%;
   background-color: rgb(240, 233, 220);
 }
+
+.about-page {
+  position: relative;
+  display: block;
+  left: 200px;
+}
