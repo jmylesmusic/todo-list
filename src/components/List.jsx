@@ -26,7 +26,7 @@ function List({ children }) {
 
   const addTask = () => {
     if (!newTask.item || !newTask.priority || !newTask.due_date) {
-      alert("Please fill in all fields");
+      alert("Please fill in all fields!");
       return;
     }
     const newTaskList = [newTask, ...task];
@@ -72,7 +72,7 @@ function List({ children }) {
             onChange={handleInputChange}
             id="input-list-item"
           />
-          <button onClick={addTask} id="input-btn">
+          <button onClick={addTask} type="button" id="input-btn">
             Add
           </button>
         </div>
