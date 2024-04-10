@@ -7,7 +7,6 @@ import MailIcon from "@mui/icons-material/Mail";
 import ImageIcon from "@mui/icons-material/Image";
 import GroupIcon from "@mui/icons-material/Group";
 import DashboardIcon from "@mui/icons-material/Dashboard";
-
 export const SidebarData = [
   {
     title: "Home",
@@ -15,9 +14,9 @@ export const SidebarData = [
     link: "/home",
   },
   {
-    title: "Analytics",
+    title: "About",
     icon: <AssessmentIcon />,
-    link: "/analytics",
+    link: "/about",
   },
   {
     title: "MailBox",

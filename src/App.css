@@ -105,6 +105,5 @@ body {
   left: 200px;
   top: 120px;
   color: #2f4050;
-  width: fit-content;
   flex-direction: row-reverse;
 }
